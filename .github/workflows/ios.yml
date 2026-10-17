@@ -51,6 +51,7 @@ jobs:
       - name: Build and test (unit + UI)
         run: |
           set -o pipefail
+          mkdir -p build
           xcodebuild test \
             -project MedList.xcodeproj -scheme MedList \
             -destination "id=${{ steps.sim.outputs.udid }}" \

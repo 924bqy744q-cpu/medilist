@@ -1,0 +1,1336 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@, born %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, geboren %2$@"
+          }
+        }
+      }
+    },
+    "%@: %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: %2$@"
+          }
+        }
+      }
+    },
+    "%lld flags to review": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld flag to review"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld flags to review"
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld aandachtspunt om te bekijken"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld aandachtspunten om te bekijken"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld more flags are shown in the app.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld more flag is shown in the app."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld more flags are shown in the app."
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nog %lld aandachtspunt staat in de app."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nog %lld aandachtspunten staan in de app."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "A medication name is needed.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een naam van het medicijn is nodig."
+          }
+        }
+      }
+    },
+    "A one-page summary to bring to appointments. Check it before sharing.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een overzicht van één pagina voor afspraken. Controleer het voordat u het deelt."
+          }
+        }
+      }
+    },
+    "About": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over"
+          }
+        }
+      }
+    },
+    "Add by hand": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zelf toevoegen"
+          }
+        }
+      }
+    },
+    "Add medication": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medicijn toevoegen"
+          }
+        }
+      }
+    },
+    "Add this medication": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit medicijn toevoegen"
+          }
+        }
+      }
+    },
+    "Added %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toegevoegd op %@"
+          }
+        }
+      }
+    },
+    "Amount each time": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoeveelheid per keer"
+          }
+        }
+      }
+    },
+    "Asks for Face ID or the device passcode each time MedList is opened.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vraagt om Face ID of de toegangscode van het toestel telkens als MedList wordt geopend."
+          }
+        }
+      }
+    },
+    "Care recipient": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zorgontvanger"
+          }
+        }
+      }
+    },
+    "Check": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controleren"
+          }
+        }
+      }
+    },
+    "Check and correct every detail": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controleer en verbeter elk gegeven"
+          }
+        }
+      }
+    },
+    "Check every field against the label. Fields marked Check may have been read incorrectly.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergelijk elk veld met het etiket. Velden met Controleren zijn mogelijk niet goed gelezen."
+          }
+        }
+      }
+    },
+    "Choose a photo": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies een foto"
+          }
+        }
+      }
+    },
+    "Confirm details": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gegevens bevestigen"
+          }
+        }
+      }
+    },
+    "Consent given": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toestemming gegeven"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verder"
+          }
+        }
+      }
+    },
+    "Data could not be deleted. Please try again.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De gegevens konden niet worden gewist. Probeer het opnieuw."
+          }
+        }
+      }
+    },
+    "Date of birth": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geboortedatum"
+          }
+        }
+      }
+    },
+    "Delete all data": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle gegevens wissen"
+          }
+        }
+      }
+    },
+    "Delete all data?": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle gegevens wissen?"
+          }
+        }
+      }
+    },
+    "Delete everything": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles wissen"
+          }
+        }
+      }
+    },
+    "Discard": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weggooien"
+          }
+        }
+      }
+    },
+    "Discard this scan?": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deze scan weggooien?"
+          }
+        }
+      }
+    },
+    "Edit medication": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medicijn bewerken"
+          }
+        }
+      }
+    },
+    "Entered and checked by the caregiver. Please compare with your own records.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingevoerd en gecontroleerd door de mantelzorger. Vergelijk dit met uw eigen gegevens."
+          }
+        }
+      }
+    },
+    "Export": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exporteren"
+          }
+        }
+      }
+    },
+    "Export PDF": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF exporteren"
+          }
+        }
+      }
+    },
+    "Form": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorm"
+          }
+        }
+      }
+    },
+    "Generated on %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemaakt op %@"
+          }
+        }
+      }
+    },
+    "Has a flag": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heeft een aandachtspunt"
+          }
+        }
+      }
+    },
+    "How often": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoe vaak"
+          }
+        }
+      }
+    },
+    "I agree that MedList processes health information about the person I care for, as described above, and I am allowed to do so for them.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ik ga ermee akkoord dat MedList gezondheidsgegevens verwerkt van de persoon voor wie ik zorg, zoals hierboven beschreven, en ik mag dit namens die persoon doen."
+          }
+        }
+      }
+    },
+    "I understand MedList is an organizer and does not give medical advice.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ik begrijp dat MedList een hulpmiddel om te ordenen is en geen medisch advies geeft."
+          }
+        }
+      }
+    },
+    "If online reading is turned on in Settings: the text read from a label, with names, dates of birth and ID numbers removed where possible, is sent to the MedList extraction service and processed by an AI provider. It is not stored there.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als online lezen aan staat in Instellingen: de tekst van een etiket, waar mogelijk zonder namen, geboortedata en ID-nummers, wordt naar de MedList-uitleesdienst gestuurd en verwerkt door een AI-aanbieder. Daar wordt niets bewaard."
+          }
+        }
+      }
+    },
+    "Ingredient lookup": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werkzame stoffen opzoeken"
+          }
+        }
+      }
+    },
+    "Interaction check unavailable": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controle op wisselwerkingen niet beschikbaar"
+          }
+        }
+      }
+    },
+    "Interaction data": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gegevens over wisselwerkingen"
+          }
+        }
+      }
+    },
+    "Interaction data: %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gegevens over wisselwerkingen: %@"
+          }
+        }
+      }
+    },
+    "Label reading": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiket lezen"
+          }
+        }
+      }
+    },
+    "Labels are read on this device only. Online reading is not set up in this version.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiketten worden alleen op dit toestel gelezen. Online lezen is in deze versie niet ingesteld."
+          }
+        }
+      }
+    },
+    "List continues: %lld more medications are not shown. See the app.": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "List continues: %lld more medication is not shown. See the app."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "List continues: %lld more medications are not shown. See the app."
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "De lijst gaat verder: nog %lld medicijn staat niet op deze pagina. Zie de app."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "De lijst gaat verder: nog %lld medicijnen staan niet op deze pagina. Zie de app."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Lock with %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergrendelen met %@"
+          }
+        }
+      }
+    },
+    "MedList helps you keep a single, up-to-date list of medications for the person you care for, and bring it to appointments.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MedList helpt u één actuele medicijnlijst bij te houden voor de persoon voor wie u zorgt, en die bij afspraken bij de hand te hebben."
+          }
+        }
+      }
+    },
+    "MedList is locked": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MedList is vergrendeld"
+          }
+        }
+      }
+    },
+    "Medication": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medicijn"
+          }
+        }
+      }
+    },
+    "Medication %lld of %lld": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medicijn %1$lld van %2$lld"
+          }
+        }
+      }
+    },
+    "Medication information is health data. Before you continue, please read how MedList handles it.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informatie over medicijnen is gezondheidsinformatie. Lees eerst hoe MedList daarmee omgaat."
+          }
+        }
+      }
+    },
+    "Medication list": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medicijnlijst"
+          }
+        }
+      }
+    },
+    "Medication list – bring to appointment": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medicijnlijst – voor de afspraak"
+          }
+        }
+      }
+    },
+    "Medication name": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naam van het medicijn"
+          }
+        }
+      }
+    },
+    "Medication names are looked up in RxNorm (US National Library of Medicine) to find active ingredients. No personal details are sent.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namen van medicijnen worden opgezocht in RxNorm (Amerikaanse National Library of Medicine) om de werkzame stoffen te vinden. Er worden geen persoonsgegevens verstuurd."
+          }
+        }
+      }
+    },
+    "Medications (%lld)": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medicijnen (%lld)"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naam"
+          }
+        }
+      }
+    },
+    "Names not recognized": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet herkende namen"
+          }
+        }
+      }
+    },
+    "No flags found": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen aandachtspunten gevonden"
+          }
+        }
+      }
+    },
+    "No medication details were found. Try a sharper photo, or add the medication by hand.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er zijn geen medicijngegevens gevonden. Probeer een scherpere foto, of voeg het medicijn zelf toe."
+          }
+        }
+      }
+    },
+    "No medications yet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog geen medicijnen"
+          }
+        }
+      }
+    },
+    "Nothing from this scan will be saved.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niets van deze scan wordt bewaard."
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "One accurate medication list": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eén kloppende medicijnlijst"
+          }
+        }
+      }
+    },
+    "Online label reading": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiket online lezen"
+          }
+        }
+      }
+    },
+    "Online reading was unavailable, so the text was read on this device only.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Online lezen was niet beschikbaar, dus de tekst is alleen op dit toestel gelezen."
+          }
+        }
+      }
+    },
+    "Photograph a pill bottle label, a pharmacy box, or the medication list from discharge papers. Make sure the text is sharp and well lit.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografeer het etiket van een potje of doosje, of de medicijnlijst uit de ontslagpapieren. Zorg dat de tekst scherp en goed verlicht is."
+          }
+        }
+      }
+    },
+    "Photos. They are read on this device and never stored or uploaded.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's. Ze worden op dit toestel gelezen en nooit bewaard of geüpload."
+          }
+        }
+      }
+    },
+    "Please check this value. It may not have been read correctly.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controleer deze waarde. Die is mogelijk niet goed gelezen."
+          }
+        }
+      }
+    },
+    "Prescriber": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voorschrijver"
+          }
+        }
+      }
+    },
+    "Prescriber: %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voorschrijver: %@"
+          }
+        }
+      }
+    },
+    "Preview of the PDF with %lld medications": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Preview of the PDF with %lld medication"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Preview of the PDF with %lld medications"
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Voorbeeld van de PDF met %lld medicijn"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Voorbeeld van de PDF met %lld medicijnen"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Privacy and consent": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy en toestemming"
+          }
+        }
+      }
+    },
+    "Purpose": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waarvoor"
+          }
+        }
+      }
+    },
+    "Purpose: %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waarvoor: %@"
+          }
+        }
+      }
+    },
+    "Reading the label…": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiket wordt gelezen…"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijderen"
+          }
+        }
+      }
+    },
+    "Remove from list": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Van de lijst verwijderen"
+          }
+        }
+      }
+    },
+    "Remove this medication from the list?": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit medicijn van de lijst verwijderen?"
+          }
+        }
+      }
+    },
+    "Removes the care recipient, every medication, and all settings from this device. This cannot be undone.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijdert de zorgontvanger, alle medicijnen en alle instellingen van dit toestel. Dit kan niet ongedaan worden gemaakt."
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaar"
+          }
+        }
+      }
+    },
+    "Save %lld medications": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld medicijnen op de lijst zetten"
+          }
+        }
+      }
+    },
+    "Save to list": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Op de lijst zetten"
+          }
+        }
+      }
+    },
+    "Scan a pill bottle label or discharge papers, or add a medication by hand.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan een etiket of ontslagpapieren, of voeg een medicijn zelf toe."
+          }
+        }
+      }
+    },
+    "Scan label": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiket scannen"
+          }
+        }
+      }
+    },
+    "Scan labels and discharge papers": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan etiketten en ontslagpapieren"
+          }
+        }
+      }
+    },
+    "Security": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beveiliging"
+          }
+        }
+      }
+    },
+    "See items to verify with the pharmacist": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zie wat u met de apotheker kunt controleren"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instellingen"
+          }
+        }
+      }
+    },
+    "Share PDF": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF delen"
+          }
+        }
+      }
+    },
+    "Share a one-page PDF": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deel een PDF van één pagina"
+          }
+        }
+      }
+    },
+    "Show recognized text": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herkende tekst tonen"
+          }
+        }
+      }
+    },
+    "Shown on the PDF so the doctor knows whose list it is. Stored only on this device.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Staat op de PDF zodat de arts weet van wie de lijst is. Alleen op dit toestel bewaard."
+          }
+        }
+      }
+    },
+    "Shows the flags": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toont de aandachtspunten"
+          }
+        }
+      }
+    },
+    "Start": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beginnen"
+          }
+        }
+      }
+    },
+    "Strength": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sterkte"
+          }
+        }
+      }
+    },
+    "Text is read on this device. Photos are never stored or uploaded.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekst wordt op dit toestel gelezen. Foto's worden nooit bewaard of geüpload."
+          }
+        }
+      }
+    },
+    "The PDF could not be created.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De PDF kon niet worden gemaakt."
+          }
+        }
+      }
+    },
+    "The medication list and care recipient will be permanently removed from this device.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De medicijnlijst en de zorgontvanger worden definitief van dit toestel verwijderd."
+          }
+        }
+      }
+    },
+    "The medication list, the name and date of birth. Encrypted by iOS and not included in backups.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De medicijnlijst, de naam en de geboortedatum. Versleuteld door iOS en niet in back-ups opgenomen."
+          }
+        }
+      }
+    },
+    "The photo could not be read. Please try again.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De foto kon niet worden gelezen. Probeer het opnieuw."
+          }
+        }
+      }
+    },
+    "The photo itself is not stored. This text is discarded when you leave this screen.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De foto zelf wordt niet bewaard. Deze tekst verdwijnt als u dit scherm verlaat."
+          }
+        }
+      }
+    },
+    "Turn on the app lock": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De app-vergrendeling aanzetten"
+          }
+        }
+      }
+    },
+    "Unlock": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ontgrendelen"
+          }
+        }
+      }
+    },
+    "Unlock the medication list": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De medicijnlijst ontgrendelen"
+          }
+        }
+      }
+    },
+    "Use camera": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera gebruiken"
+          }
+        }
+      }
+    },
+    "Use sample label": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voorbeeldetiket gebruiken"
+          }
+        }
+      }
+    },
+    "What leaves this device": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wat dit toestel verlaat"
+          }
+        }
+      }
+    },
+    "What stays on this device": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wat op dit toestel blijft"
+          }
+        }
+      }
+    },
+    "When on, recognized label text (not the photo) is sent to the MedList extraction service for better results. Names, dates of birth and ID numbers are removed first where possible.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als dit aan staat, wordt de herkende tekst (niet de foto) naar de MedList-uitleesdienst gestuurd voor betere resultaten. Namen, geboortedata en ID-nummers worden waar mogelijk eerst verwijderd."
+          }
+        }
+      }
+    },
+    "Who is this list for?": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voor wie is deze lijst?"
+          }
+        }
+      }
+    },
+    "You can delete all data at any time in Settings.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "U kunt alle gegevens altijd wissen in Instellingen."
+          }
+        }
+      }
+    },
+    "device passcode": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "toegangscode"
+          }
+        }
+      }
+    },
+    "e.g. 1 tablet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bijv. 1 tablet"
+          }
+        }
+      }
+    },
+    "e.g. 50 mg": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bijv. 50 mg"
+          }
+        }
+      }
+    },
+    "e.g. Dr. Jansen": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bijv. Dr. Jansen"
+          }
+        }
+      }
+    },
+    "e.g. Metoprolol": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bijv. Metoprolol"
+          }
+        }
+      }
+    },
+    "e.g. blood pressure": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bijv. bloeddruk"
+          }
+        }
+      }
+    },
+    "e.g. once daily": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bijv. 1 x per dag"
+          }
+        }
+      }
+    },
+    "e.g. tablet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bijv. tablet"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
