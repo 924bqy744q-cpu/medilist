@@ -19,9 +19,20 @@ jobs:
       - run: swift test --package-path MedListCore
 
   ios:
-    name: Build + simulator tests
-    runs-on: macos-15
+    name: Build + simulator tests (${{ matrix.name }})
+    runs-on: ${{ matrix.runner }}
     timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Xcode 26 / iOS 26
+            runner: macos-15
+            artifact: ios26
+          # iOS 27 SDK build: the real compatibility check (deprecations are listed in the job summary).
+          - name: Xcode 27 / iOS 27
+            runner: xcode-27
+            artifact: ios27
     steps:
       - uses: actions/checkout@v4
 
@@ -61,6 +72,16 @@ jobs:
             | tee build/xcodebuild.log | grep -E "error:|warning: .*MedList|Test Case|Executed|\*\* (BUILD|TEST)" || true
           grep -q "\*\* TEST SUCCEEDED \*\*" build/xcodebuild.log
 
+      - name: Deprecation report
+        if: always()
+        run: |
+          {
+            echo "### ${{ matrix.name }}: deprecation warnings in MedList code"
+            grep -hE "/(MedList|MedListCore|MedListTests|MedListUITests)/.*warning: .*(deprecated|obsoleted|renamed)" build/xcodebuild.log 2>/dev/null \
+              | sed -E 's#^.*/(MedList[^:]*:[0-9]+):[0-9]+: #\1: #' | sort -u || true
+            echo "(end of list)"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Screenshots (onboarding, list, flags, export)
         if: always()
         timeout-minutes: 10
@@ -69,7 +90,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ios-results
+          name: ios-results-${{ matrix.artifact }}
           path: |
             build/screenshots
             build/xcodebuild.log
