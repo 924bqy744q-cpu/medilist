@@ -35,7 +35,14 @@ final class MedListUITests: XCTestCase {
         XCTAssertFalse(start.isEnabled, "consent is required")
         // Tap the switch itself (right edge); long toggle labels do not toggle reliably when tapped in the middle.
         for id in ["onboarding.consent", "onboarding.disclaimer"] {
-            app.switches[id].coordinate(withNormalizedOffset: CGVector(dx: 0.93, dy: 0.5)).tap()
+            let toggle = app.switches[id]
+            // Form rows are lazy: scroll until the toggle exists and can be tapped.
+            var tries = 0
+            while !(toggle.exists && toggle.isHittable) && tries < 6 {
+                app.swipeUp()
+                tries += 1
+            }
+            toggle.coordinate(withNormalizedOffset: CGVector(dx: 0.93, dy: 0.5)).tap()
         }
         XCTAssertTrue(start.isEnabled)
         start.tap()

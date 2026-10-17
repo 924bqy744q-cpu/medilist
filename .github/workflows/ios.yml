@@ -87,6 +87,17 @@ jobs:
         timeout-minutes: 10
         run: scripts/ci-screenshots.sh "${{ steps.sim.outputs.udid }}" build/DerivedData build/screenshots
 
+      - name: Screenshot thumbnails (base64, for reviewers without artifact access)
+        if: always()
+        run: |
+          for f in build/screenshots/*.png; do
+            [ -f "$f" ] || continue
+            sips -Z 700 -s format jpeg -s formatOptions 55 "$f" --out /tmp/thumb.jpg >/dev/null
+            echo "=====BEGIN ${{ matrix.artifact }}-$(basename "$f" .png)"
+            base64 -i /tmp/thumb.jpg | fold -w 4000
+            echo "=====END"
+          done
+
       - uses: actions/upload-artifact@v4
         if: always()
         with:

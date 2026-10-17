@@ -47,7 +47,7 @@ struct MedicationDraft: Identifiable, Equatable {
     }
 }
 
-extension MedField: Identifiable {
+extension MedField: @retroactive Identifiable {
     public var id: String { rawValue }
 
     var label: LocalizedStringKey {

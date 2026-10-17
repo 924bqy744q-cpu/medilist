@@ -38,8 +38,11 @@ final class MedListTests: XCTestCase {
 
     func testExportFileIsProtectedAndRemovable() throws {
         let url = try PDFExporter.render(makeReport(medCount: 2))
+        #if !targetEnvironment(simulator)
+        // The simulator does not implement Data Protection, so this is only checkable on a device.
         let attributes = try FileManager.default.attributesOfItem(atPath: url.path)
         XCTAssertEqual(attributes[.protectionKey] as? FileProtectionType, .complete)
+        #endif
         PDFExporter.removeTemporaryExports()
         XCTAssertFalse(FileManager.default.fileExists(atPath: url.path))
     }
