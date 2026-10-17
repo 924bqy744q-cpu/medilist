@@ -29,7 +29,7 @@ MedList v1 is a working MVP, not a pilot-ready product. The items below are your
 
 ## 5. App Store and privacy
 - [ ] **App Privacy labels:** "Health & Fitness → Health" and "Other user content" (label text), both *not linked to identity* and *not used for tracking*, collected only when online reading is on. No analytics, no tracking.
-- [ ] Add a **privacy manifest** (`PrivacyInfo.xcprivacy`). The app uses `UserDefaults` (required-reason API `CA92.1`).
+- [ ] Review the **privacy manifest** (`MedList/Resources/PrivacyInfo.xcprivacy`, a draft: Health data not linked or tracked; UserDefaults `CA92.1`; file timestamps `C617.1`) against your final App Store answers.
 - [ ] Write a privacy policy URL and support URL, and make the medical disclaimer visible in the store listing.
 - [ ] Set your `DEVELOPMENT_TEAM` and bundle ID (`app.medlist.MedList` is a placeholder). The Data Protection entitlement needs a paid developer account.
 - [ ] App icon (`Assets.xcassets/AppIcon` is empty).
