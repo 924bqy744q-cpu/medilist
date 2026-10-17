@@ -7,13 +7,13 @@ mkdir -p "$OUT"
 APP=$(find "$DERIVED/Build/Products" -name "MedList.app" -path "*iphonesimulator*" | head -1)
 [ -z "$APP" ] && { echo "app not built"; exit 0; }
 xcrun simctl boot "$UDID" 2>/dev/null || true
-xcrun simctl bootstatus "$UDID" -b
-xcrun simctl install "$UDID" "$APP"
+perl -e 'alarm 180; exec @ARGV' xcrun simctl bootstatus "$UDID" -b || true
+perl -e 'alarm 120; exec @ARGV' xcrun simctl install "$UDID" "$APP" || exit 0
 BUNDLE=app.medlist.MedList
 shot() {
   local name="$1"; shift
   xcrun simctl terminate "$UDID" "$BUNDLE" 2>/dev/null || true
-  xcrun simctl launch "$UDID" "$BUNDLE" "$@" >/dev/null
+  perl -e 'alarm 30; exec @ARGV' xcrun simctl launch "$UDID" "$BUNDLE" "$@" >/dev/null || { echo "launch failed: $name"; return; }
   sleep 4
   xcrun simctl io "$UDID" screenshot "$OUT/$name.png" >/dev/null && echo "saved $name"
 }
