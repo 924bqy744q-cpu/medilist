@@ -12,11 +12,11 @@ public struct ReportLayout: Equatable, Sendable {
     public static let minimumFontSize = 8.0
 
     /// Fixed blocks: header (title, recipient, date) and footer (disclaimer). Measured generously.
-    static let headerHeight = 96.0
-    static let footerHeight = 64.0
-    static let tableHeaderLines = 1.0
-    static let lineSpacing = 1.25
-    static let rowPadding = 6.0
+    public static let headerHeight = 96.0
+    public static let footerHeight = 64.0
+    public static let tableHeaderLines = 1.0
+    public static let lineSpacing = 1.25
+    public static let rowPadding = 6.0
 
     public let fontSize: Double
     public let visibleRows: Int

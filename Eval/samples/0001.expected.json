@@ -1,0 +1,4 @@
+{ "medications": [
+  { "drug_name": "Lisinopril", "strength": "10 mg", "form": "tablet", "dose": "1 tablet",
+    "frequency": "once daily", "prescriber": "Dr. Emily Carter", "purpose": "blood pressure" }
+] }

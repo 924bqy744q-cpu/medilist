@@ -86,9 +86,9 @@ enum PrivacyLog {
 
     static func event(_ name: StaticString, count: Int? = nil) {
         if let count {
-            logger.info("\(name, privacy: .public) count=\(count, privacy: .public)")
+            logger.info("\(name.description, privacy: .public) count=\(count, privacy: .public)")
         } else {
-            logger.info("\(name, privacy: .public)")
+            logger.info("\(name.description, privacy: .public)")
         }
     }
 }

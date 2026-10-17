@@ -1,0 +1,8 @@
+{ "medications": [
+  { "drug_name": "Metoprolol succinate ER", "strength": "25 mg", "form": "tablet", "dose": "1 tablet",
+    "frequency": "daily", "prescriber": "Sam Rivera", "purpose": "heart rate" },
+  { "drug_name": "Furosemide", "strength": "40 mg", "form": "tablet", "dose": "1 tablet",
+    "frequency": "every morning", "prescriber": "Sam Rivera", "purpose": null },
+  { "drug_name": "Apixaban", "strength": "5 mg", "form": "tablet", "dose": "1 tablet",
+    "frequency": "twice daily", "prescriber": "Sam Rivera", "purpose": null }
+] }

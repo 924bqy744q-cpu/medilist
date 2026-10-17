@@ -1,0 +1,4 @@
+{ "medications": [
+  { "drug_name": "Paracetamol", "strength": "500 mg", "form": "tablet", "dose": "1-2 tabletten",
+    "frequency": "zo nodig", "prescriber": null, "purpose": "pijn of koorts" }
+] }

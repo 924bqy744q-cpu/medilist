@@ -74,6 +74,18 @@ final class LabelTextParserTests: XCTestCase {
         XCTAssertTrue(ConfidencePolicy.needsAttention(med.drugName))
     }
 
+    func testOCRDigitInNameIsLowConfidence() throws {
+        let med = try XCTUnwrap(parser.parse("ALBUTER0L HFA 90 MCG/ACT INHALER\nINHALE 2 PUFFS EVERY 4 TO 6 HOURS").first)
+        XCTAssertEqual(med.drugName.value, "Albuter0L Hfa")
+        XCTAssertTrue(ConfidencePolicy.needsAttention(med.drugName))
+        XCTAssertEqual(med.frequency.value, "every 4 to 6 hours")
+    }
+
+    func testDoseRange() throws {
+        let med = try XCTUnwrap(parser.parse("Paracetamol 500 mg tablet\nzo nodig 1-2 tabletten").first)
+        XCTAssertEqual(med.dose.value, "1-2 tabletten")
+    }
+
     func testEmptyAndJunkInput() {
         XCTAssertTrue(parser.parse("").isEmpty)
         XCTAssertTrue(parser.parse("   \n \n").isEmpty)

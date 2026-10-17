@@ -1,0 +1,4 @@
+{ "medications": [
+  { "drug_name": "Albuterol HFA", "strength": "90 mcg", "form": "inhaler", "dose": "2 puffs",
+    "frequency": "every 4 to 6 hours as needed", "prescriber": "Dr. R. Patel", "purpose": "wheezing" }
+] }

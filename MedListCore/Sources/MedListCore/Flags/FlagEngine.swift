@@ -13,6 +13,14 @@ public struct MedicationFlag: Identifiable, Equatable, Sendable {
     public let ingredients: [String]
     public let interaction: InteractionRecord?
 
+    public init(kind: FlagKind, medicationIDs: [UUID], medicationNames: [String], ingredients: [String], interaction: InteractionRecord?) {
+        self.kind = kind
+        self.medicationIDs = medicationIDs
+        self.medicationNames = medicationNames
+        self.ingredients = ingredients
+        self.interaction = interaction
+    }
+
     public var id: String {
         ([kind.rawValue] + ingredients + medicationIDs.map(\.uuidString).sorted()).joined(separator: "|")
     }
@@ -54,6 +62,12 @@ public struct FlagResult: Equatable, Sendable {
     public var interactionCheckFailed: Bool
     /// Medications whose name could not be matched to an ingredient, so checks for them are weaker.
     public var unresolvedMedicationIDs: [UUID]
+
+    public init(flags: [MedicationFlag], interactionCheckFailed: Bool, unresolvedMedicationIDs: [UUID]) {
+        self.flags = flags
+        self.interactionCheckFailed = interactionCheckFailed
+        self.unresolvedMedicationIDs = unresolvedMedicationIDs
+    }
 }
 
 public struct FlagEngine: Sendable {

@@ -44,7 +44,7 @@ public struct LabelTextParser: Sendable {
             med.strength = ExtractedField(value: Self.formatStrength(strength.text), confidence: 0.8)
             let name = Self.cleanName(String(anchor[..<strength.range.lowerBound]))
             if !name.isEmpty {
-                med.drugName = ExtractedField(value: name, confidence: 0.75)
+                med.drugName = ExtractedField(value: name, confidence: Self.looksGarbled(name) ? 0.45 : 0.75)
             } else if let anchorIndex, let previous = lines[..<anchorIndex].last(where: { !Self.isNoise($0) }) {
                 med.drugName = ExtractedField(value: Self.cleanName(previous), confidence: 0.5)
             }
@@ -104,6 +104,13 @@ public struct LabelTextParser: Sendable {
         return name
     }
 
+    /// Letters and digits mixed inside one word ("ALBUTER0L", "Metf0rmin") usually means an OCR error.
+    static func looksGarbled(_ name: String) -> Bool {
+        name.split(separator: " ").contains { word in
+            word.count > 3 && word.contains(where: \.isLetter) && word.contains(where: \.isNumber)
+        }
+    }
+
     static func looksLikeName(_ line: String) -> Bool {
         let letters = line.filter(\.isLetter).count
         return letters >= 4 && Double(letters) / Double(max(line.count, 1)) > 0.6 && line.split(separator: " ").count <= 4
@@ -148,7 +155,7 @@ public struct LabelTextParser: Sendable {
     // MARK: - Dose
 
     private static let dosePattern = Pattern(
-        #"(?<![\w.,/])((?:\d+(?:[.,/]\d+)?|½|one|two|three|half|een|één|twee|drie|halve|1/2)\s+(?:tablets?|tabs?|capsules?|caps?|puffs?|drops?|sprays?|patch(?:es)?|sachets?|tabletten|druppels?|pufjes?|pufs?|stuks?|zakjes?|inhalaties?|ml))\b"#
+        #"(?<![\w.,/])((?:\d+(?:[.,/]\d+)?(?:\s?-\s?\d+)?|½|one|two|three|half|een|één|twee|drie|halve|1/2)\s+(?:tablets?|tabs?|capsules?|caps?|puffs?|drops?|sprays?|patch(?:es)?|sachets?|tabletten|druppels?|pufjes?|pufs?|stuks?|zakjes?|inhalaties?|ml))\b"#
     )
 
     static func dose(in lines: [String], anchor: String?) -> ExtractedField {
@@ -169,7 +176,7 @@ public struct LabelTextParser: Sendable {
     private static let frequencyPatterns: [Pattern] = [
         // English
         Pattern(#"\b(?:once|twice|(?:one|two|three|four|\d)\s+times)\s+(?:a\s+|per\s+|each\s+)?(?:day|daily|week)\b"#),
-        Pattern(#"\bevery\s+(?:\d+(?:\s?-\s?\d+)?\s+hours?|morning|evening|night|day|other\s+day|week)\b"#),
+        Pattern(#"\bevery\s+(?:\d+(?:\s?(?:-|to)\s?\d+)?\s+hours?|morning|evening|night|day|other\s+day|week)\b"#),
         Pattern(#"\b(?:at\s+bedtime|in\s+the\s+(?:morning|evening)|before\s+(?:breakfast|meals|bed)|with\s+(?:meals|food|breakfast|dinner))\b"#),
         Pattern(#"\b(?:as|when)\s+needed\b"#),
         Pattern(#"\b(?:daily|weekly|nightly)\b"#),

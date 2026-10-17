@@ -1,0 +1,4 @@
+{ "medications": [
+  { "drug_name": "Omeprazol", "strength": "20 mg", "form": "capsule", "dose": "1 capsule",
+    "frequency": "1 x per dag", "prescriber": "Dr. P. de Boer", "purpose": "maagklachten" }
+] }
