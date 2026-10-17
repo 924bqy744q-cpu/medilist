@@ -1,0 +1,75 @@
+name: iOS
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core-linux:
+    name: Core tests (Linux)
+    runs-on: ubuntu-latest
+    container: swift:6.1-noble
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test --package-path MedListCore
+
+  ios:
+    name: Build + simulator tests
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Core tests (macOS)
+        run: swift test --package-path MedListCore
+
+      - name: Pick simulator
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c '
+          import json,sys
+          d=json.load(sys.stdin)["devices"]
+          ios=[(k,v) for k,v in d.items() if "iOS" in k]
+          ios.sort(key=lambda kv: [int(x) for x in kv[0].split("iOS-")[-1].split("-")])
+          for k,v in reversed(ios):
+              phones=[x for x in v if x["name"].startswith("iPhone") and "SE" not in x["name"]]
+              if phones: print(phones[0]["udid"]); break
+          ')
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl list devices | grep "$UDID"
+
+      - name: Build and test (unit + UI)
+        run: |
+          set -o pipefail
+          xcodebuild test \
+            -project MedList.xcodeproj -scheme MedList \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -resultBundlePath build/MedList.xcresult \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            | tee build/xcodebuild.log | grep -E "error:|warning: .*MedList|Test Case|Executed|\*\* (BUILD|TEST)" || true
+          grep -q "\*\* TEST SUCCEEDED \*\*" build/xcodebuild.log
+
+      - name: Screenshots (onboarding, list, flags, export)
+        if: always()
+        run: scripts/ci-screenshots.sh "${{ steps.sim.outputs.udid }}" build/DerivedData build/screenshots
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-results
+          path: |
+            build/screenshots
+            build/xcodebuild.log
+            build/MedList.xcresult
+          retention-days: 7

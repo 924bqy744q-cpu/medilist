@@ -1,0 +1,10 @@
+.DS_Store
+build/
+DerivedData/
+.build/
+.swiftpm/
+*.xcuserstate
+xcuserdata/
+Eval/results/
+backend/node_modules/
+backend/.env

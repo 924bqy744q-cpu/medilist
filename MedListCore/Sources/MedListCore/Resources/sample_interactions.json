@@ -1,0 +1,33 @@
+{
+  "_note": "SAMPLE DATA ONLY. A handful of well-known pairs so the flag UI can be developed and tested. Not clinically validated, not complete, not for use with real patients. Replace via a licensed InteractionProvider before a pilot (see TODO.md).",
+  "source": "MedList sample data (not clinically validated)",
+  "pairs": [
+    { "a": "warfarin", "b": "aspirin",
+      "en": "Listed in the sample data as a combination that may increase bleeding risk.",
+      "nl": "In de voorbeelddata vermeld als combinatie die het risico op bloedingen kan verhogen." },
+    { "a": "warfarin", "b": "ibuprofen",
+      "en": "Listed in the sample data as a combination that may increase bleeding risk.",
+      "nl": "In de voorbeelddata vermeld als combinatie die het risico op bloedingen kan verhogen." },
+    { "a": "acenocoumarol", "b": "ibuprofen",
+      "en": "Listed in the sample data as a combination that may increase bleeding risk.",
+      "nl": "In de voorbeelddata vermeld als combinatie die het risico op bloedingen kan verhogen." },
+    { "a": "apixaban", "b": "aspirin",
+      "en": "Listed in the sample data as a combination that may increase bleeding risk.",
+      "nl": "In de voorbeelddata vermeld als combinatie die het risico op bloedingen kan verhogen." },
+    { "a": "simvastatin", "b": "clarithromycin",
+      "en": "Listed in the sample data as a combination that may increase the chance of muscle side effects.",
+      "nl": "In de voorbeelddata vermeld als combinatie die de kans op spierklachten kan verhogen." },
+    { "a": "lisinopril", "b": "spironolactone",
+      "en": "Listed in the sample data as a combination that may affect potassium levels.",
+      "nl": "In de voorbeelddata vermeld als combinatie die het kaliumgehalte kan beïnvloeden." },
+    { "a": "enalapril", "b": "spironolactone",
+      "en": "Listed in the sample data as a combination that may affect potassium levels.",
+      "nl": "In de voorbeelddata vermeld als combinatie die het kaliumgehalte kan beïnvloeden." },
+    { "a": "sertraline", "b": "tramadol",
+      "en": "Listed in the sample data as a combination that may increase serotonin-related side effects.",
+      "nl": "In de voorbeelddata vermeld als combinatie die serotonine-gerelateerde bijwerkingen kan versterken." },
+    { "a": "lisinopril", "b": "ibuprofen",
+      "en": "Listed in the sample data as a combination that may affect kidney function and blood pressure.",
+      "nl": "In de voorbeelddata vermeld als combinatie die de nierfunctie en bloeddruk kan beïnvloeden." }
+  ]
+}
